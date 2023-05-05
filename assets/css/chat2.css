@@ -1,0 +1,19 @@
+@media only screen and (max-width: 710px) {
+    .chat-wrapper > .contacts {
+      display: none;
+    }
+    .chatroom {
+      width: 100vw;
+      height: calc(100vh - 100px);
+    }
+    .chat-wrapper > .chatbox > .header {
+      top: 0;
+      left: 5px;
+      padding-top: 1rem;
+      position: fixed;
+      flex-shrink: 0;
+      width: 100vw;
+      background-color: white;
+      z-index: 10;
+    }
+  }

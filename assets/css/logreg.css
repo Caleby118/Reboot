@@ -1,0 +1,102 @@
+.sign-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    height: 400px;
+    overflow: hidden;
+}
+.sign-logo {
+    position: absolute;
+    margin-left: 2rem;
+}
+.input-text {
+    width: 100%;
+    height: 50px;
+    border-radius: var(--br);
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    background-color: var(--white);
+    border: 1px solid rgba(8, 8, 8, 0.827);
+    margin-bottom: 1rem;
+}
+.login-btn {
+    width: 100%;
+    border: 1px solid var(--dark-04);
+    margin: .5rem 0 .5rem;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 200ms ease-in-out;
+    border-radius: 2px;
+}
+.sign-img {
+    flex-basis: 55%;
+    height: 100vh;
+}
+.sign-main {
+    flex-basis: 45%;
+    margin-right: 8rem;
+}
+.form-text {
+    text-align: right;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.divider {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    color: rgba(var(--darkA), .5);
+    font-size: .9rem;
+}
+.divider::before {
+    left: 0;
+}
+.divider::after {
+    right: 0;
+}
+.divider::before, .divider::after {
+    content: " ";
+    display: block;
+    top: 50%;
+    height: .5px;
+    background-color: var(--dark-05);
+    position: absolute;
+    width: calc(50% - 15px);
+}
+.user-details {
+    display: flex;
+    justify-content: space-between;
+}
+.img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: inherit;
+}
+.sign-container .secondary-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-container .primary-a {
+    background-color: pink;
+    color: white;
+}
+@media only screen and (max-width: 705px) {
+    .sign-main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .sign-img {
+        display: none;
+    }
+    .sign-main {
+        flex-basis: 100%;
+    }
+}
