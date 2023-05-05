@@ -41,8 +41,8 @@ class Products extends Database {
             
                 // AWS Info
                 $bucketName = 'reboot-media';
-                $IAM_KEY = 'AKIAUGLI7NB6NDRZ2GH3';
-                $IAM_SECRET = '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';
+                $IAM_KEY = 'key';
+                $IAM_SECRETKEY = 'secretkey';
             
                 // Connect to AWS
                 try {
