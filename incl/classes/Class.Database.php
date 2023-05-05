@@ -1,9 +1,9 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $user = "vhserers_admin2";
-    private $pwd = "INLL+eJU&Ov5";
-    private $dbn = "vhserers_reboot";
+    private $user = "user";
+    private $pwd = "pw";
+    private $dbn = "dbn";
 
     protected function connect() {
         try {
